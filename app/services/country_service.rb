@@ -12,4 +12,8 @@ class CountryService
     countries = get_url("/v3.1/all")
     countries.sample
   end
+
+  # def get_all_countries
+  #   countries = get_url("/v3.1/all")
+  # end
 end
