@@ -1,25 +1,21 @@
 require "rails_helper"
 
 RSpec.describe "Country Service" do
-  it "can get a list of recipes from a random country", :vcr do
-    # countries = File.read("spec/fixtures/all_countries.json")
-    # stub_request(:get, "https://restcountries.com/v3.1/all")
-    # .to_return(status: 200, body: countries)
+  it "can get a random country", :vcr do
+    service = CountryService.new
+    random_country = service.get_random_country
 
-    # recipes = File.read("spec/fixtures/thailand_recipes.json")
-    # stub_request(:get, "https://api.edamam.com/recipes/v2/?app_id=043cfb46&app_key=e34840b26bcec722562c1fbb2d1d6e43&q=&type=public")
-    #     .to_return(status: 200, body: recipes)
+    expect(random_country).to be_a(Hash)
+    expect(random_country[:name]).to be_a(Hash)
+    expect(random_country[:name]).to have_key(:common)
+    expect(random_country[:name][:common]).to be_a(String)
+  end
 
-    # thai_recipes = File.read("spec/fixtures/thailand_recipes.json")
-    # stub_request(:get, "https://api.edamam.com/recipes/v2/?app_id=043cfb46&app_key=e34840b26bcec722562c1fbb2d1d6e43&q=thailand&type=public")
-    #   .to_return(status: 200, body: recipes)
+  it "can get a country with specified name", :vcr do
+    service = CountryService.new
+    france = service.get_country("france")
 
-      service = CountryService.new
-      random_country = service.get_random_country
-
-      expect(random_country).to be_a(Hash)
-      expect(random_country[:name]).to be_a(Hash)
-      expect(random_country[:name]).to have_key(:common)
-      expect(random_country[:name][:common]).to be_a(String)
+    expect(france[:capital]).to be_an(Array)
+    expect(france[:capital][0]).to be_a(String)
   end
 end
