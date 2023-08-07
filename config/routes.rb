@@ -9,6 +9,8 @@ Rails.application.routes.draw do
       resources :recipes, only: [:index]
 
       resources :learning_resources, only: [:index]
+
+      resources :air_quality, only: [:index]
     end
   end
 end
