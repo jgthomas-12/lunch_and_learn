@@ -14,7 +14,6 @@ RSpec.describe RecipesFacade do
       expect(thai_recipes.first.id).to be_a(String)
       expect(thai_recipes.first.image_url).to be_a(String)
       expect(thai_recipes.first.title).to be_a(String)
-      expect(thai_recipes.first.type).to be_a(String)
       expect(thai_recipes.first.url).to be_a(String)
     end
   end

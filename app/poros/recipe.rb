@@ -8,7 +8,6 @@ class Recipe
 
   def initialize(data, country)
     @id = "null"
-    @type = "recipe"
     @title = data[:recipe][:label]
     @url = data[:recipe][:url]
     @country = country

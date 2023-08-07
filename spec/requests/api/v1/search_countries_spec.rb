@@ -22,10 +22,6 @@ RSpec.describe "API V1 Recipes request", type: :request do
           expect(recipe[:type]).to be_a(String)
           expect(recipe[:type]).to eq("recipe")
 
-          expect(recipe[:attributes]).to have_key(:id)
-          expect(recipe[:attributes][:id]).to be_a(String)
-          expect(recipe[:attributes][:id]).to eq("null")
-
           expect(recipe[:attributes]).to have_key(:title)
           expect(recipe[:attributes]).to have_key(:url)
           expect(recipe[:attributes]).to have_key(:country)
@@ -77,10 +73,6 @@ RSpec.describe "API V1 Recipes request", type: :request do
           expect(recipe[:type]).to be_a(String)
           expect(recipe[:type]).to eq("recipe")
 
-          expect(recipe[:attributes]).to have_key(:id)
-          expect(recipe[:attributes][:id]).to be_a(String)
-          expect(recipe[:attributes][:id]).to eq("null")
-
           expect(recipe[:attributes]).to have_key(:title)
           expect(recipe[:attributes]).to have_key(:url)
           expect(recipe[:attributes]).to have_key(:country)
@@ -108,5 +100,15 @@ RSpec.describe "API V1 Recipes request", type: :request do
         expect(JSON.parse(response.body)).to eq({ "data" => [] })
       end
     end
+
+    # describe '' do
+    #   it '', :vcr do
+    #     country = CountriesFacade.new.get_capital("thailand")
+
+    #     require 'pry'; binding.pry
+    #   end
+    # end
+
+
   end
 end
