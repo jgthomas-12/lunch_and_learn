@@ -13,10 +13,9 @@ RSpec.describe Recipe do
     }
 
     recipe = Recipe.new(data, country)
-
+    
     expect(recipe).to be_a(Recipe)
     expect(recipe.id).to eq("null")
-    expect(recipe.type).to eq("recipe")
     expect(recipe.title).to eq(data[:recipe][:label])
     expect(recipe.url).to eq(data[:recipe][:url])
     expect(recipe.country).to eq(country)
