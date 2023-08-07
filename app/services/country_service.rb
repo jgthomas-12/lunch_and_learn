@@ -13,7 +13,7 @@ class CountryService
     countries.sample
   end
 
-  # def get_all_countries
-  #   countries = get_url("/v3.1/all")
-  # end
+  def get_cap(country)
+    country = get_url("/v3.1/name/#{country}")
+  end
 end
