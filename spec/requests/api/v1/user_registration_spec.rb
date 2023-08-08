@@ -5,12 +5,10 @@ RSpec.describe "API V1 Users", type: :request do
     describe "happy path" do
       it "creates a new user with unique api key" do
         valid_params = {
-          user: {
             name: "Odell",
             email: "goodboy@ruffruff.com",
             password: "treats4lyf",
             password_confirmation: "treats4lyf"
-          }
         }
 
         post "/api/v1/users", params: valid_params, as: :json
@@ -18,15 +16,15 @@ RSpec.describe "API V1 Users", type: :request do
         user = User.first
         expect(response.status).to eq(201)
         expect(User.count).to eq(1)
-        expect(user.name).to eq(valid_params[:user][:name])
-        expect(user.email).to eq(valid_params[:user][:email])
+        expect(user.name).to eq(valid_params[:name])
+        expect(user.email).to eq(valid_params[:email])
         expect(user.api_key).to be_present
         expect(user.password_digest).to be_present
       end
     end
 
     describe "sad path" do
-      it "returns an error message with invalid params" do
+      it "returns an error message if passwords do not match" do
         invalid_params = {
           name: "Odell",
           email: "goodboy@ruffruff.com",
