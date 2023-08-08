@@ -15,3 +15,4 @@ class RecipeService
     get_url("/api/recipes/v2/?type=public&q=#{country}")
   end
 end
+ 

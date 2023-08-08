@@ -14,7 +14,7 @@ RSpec.describe AirQualityFacade do
     end
   end
 
-  describe "#captial" do
+  describe "#capital" do
     it "returns the capital city for a given country" do
       country = "france"
       capital = AirQualityFacade.new.capital(country)

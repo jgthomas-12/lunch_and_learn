@@ -2,7 +2,8 @@ require "rails_helper"
 
 RSpec.describe "Photo Service" do
   it "can get a list of ten photos from a specified keyword" do
-    photos = PhotoService.new.get_all_photos("laos")
+    photos = PhotoService.new.get_all_photos("france")
+
     balloon = photos[:results].first
 
     expect(balloon).to be_a(Hash)
