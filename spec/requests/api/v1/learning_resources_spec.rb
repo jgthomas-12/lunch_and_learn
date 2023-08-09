@@ -6,7 +6,7 @@ RSpec.describe "API V1 learning resources request", type: :request do
       it "returns one learning resource in compliance with API JSON", :vcr do
 
         get "/api/v1/learning_resources", params: { country: "laos"}, headers: { 'Accept' => 'application/json' }
-        # get "/api/v1/learning_resources?country=laos"
+
         resource = JSON.parse(response.body, symbolize_names: true)
 
         expect(response).to be_successful
@@ -41,6 +41,17 @@ RSpec.describe "API V1 learning resources request", type: :request do
 
         expect(resource[:data][:attributes][:images][0]).to have_key(:alt_tag)
         expect(resource[:data][:attributes][:images][0]).to have_key(:url)
+      end
+    end
+
+    describe "sad path" do
+      it "returns an empty response when no learning resources are available for the requested country", :vcr do
+        get "/api/v1/learning_resources", params: { country: "" }, headers: { 'Accept' => 'application/json' }
+
+        expect(response).to_not be_successful
+        resource = JSON.parse(response.body, symbolize_names: true)
+        expect(resource).to have_key(:error)
+        expect(resource[:error]).to eq("No learning resources available")
       end
     end
   end
