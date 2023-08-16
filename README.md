@@ -30,9 +30,6 @@ GET /api/v1/favorites?[API_KEY]
 ```
 
 
-- User will need to sign up for a unsplash api key and create account [here](https://unsplash.com/documentation#creating-a-developer-account)
-- Sign up for an api key and id at "https://developer.edamam.com/edamam-recipe-api"
-
   <h3> How to install the project?</h3>
 
 - Fork and clone this repo
