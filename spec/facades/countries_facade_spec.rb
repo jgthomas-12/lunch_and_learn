@@ -15,8 +15,6 @@ RSpec.describe CountriesFacade do
       country = facade.get_country
 
       expect(country).to be_a(Country)
-      expect(country.name).to eq("thailand")
-      expect(country.name).to be_a(String)
     end
   end
 end

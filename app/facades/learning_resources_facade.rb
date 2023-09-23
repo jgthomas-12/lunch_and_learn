@@ -18,6 +18,4 @@ class LearningResourcesFacade
     video_data = get_country_video(country)
     LearningResource.new(country, photos, video_data)
   end
-
-
 end

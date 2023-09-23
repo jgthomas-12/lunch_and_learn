@@ -12,5 +12,6 @@ RSpec.describe Country do
     country = Country.new(data)
     expect(country).to be_a(Country)
     expect(country.name).to eq(data[:name][:common])
+    expect(country.name).to be_a(String)
   end
 end

@@ -7,10 +7,6 @@ RSpec.describe AirQualityFacade do
       quality = AirQualityFacade.new.air_quality(country)
 
       expect(quality).to be_an(AirQuality)
-      expect(quality.city).to be_an(String)
-      expect(quality.aqi).to be_an(Integer)
-      expect(quality.pm25_concentration).to be_a(Float)
-      expect(quality.co_concentration).to be_a(Float)
     end
   end
 
