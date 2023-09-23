@@ -11,7 +11,13 @@ RSpec.describe AirQuality do
 
     air_quality = AirQuality.new(data, city)
 
-    expect(air_quality).to be_a(AirQuality)
+    expect(air_quality).to be_an(AirQuality)
+
+    expect(air_quality.city).to be_a(String)
+    expect(air_quality.aqi).to be_an(Integer)
+    expect(air_quality.pm25_concentration).to be_a(Float)
+    expect(air_quality.co_concentration).to be_a(Float)
+
     expect(air_quality.id).to eq("null")
     expect(air_quality.city).to eq(city)
     expect(air_quality.aqi).to eq(data[:overall_aqi])

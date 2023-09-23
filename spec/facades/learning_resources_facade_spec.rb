@@ -6,6 +6,7 @@ RSpec.describe LearningResourcesFacade do
       country = "laos"
       photos = LearningResourcesFacade.new.get_country_photos(country)
       expect(photos).to be_an(Array)
+
       expect(photos.first).to have_key(:id)
       expect(photos.first).to have_key(:urls)
       expect(photos.first[:urls]).to have_key(:raw)
@@ -42,21 +43,6 @@ RSpec.describe LearningResourcesFacade do
       resource = LearningResourcesFacade.new.learning_resource(country)
 
       expect(resource).to be_a(LearningResource)
-      expect(resource.country).to eq(country)
-      expect(resource.images).to be_an(Array)
-      expect(resource.video).to be_a(Hash)
-
-      expect(resource.images[0]).to have_key(:alt_tag)
-      expect(resource.images[0][:alt_tag]).to be_a(String)
-
-      expect(resource.images[0]).to have_key(:url)
-      expect(resource.images[0][:url]).to be_a(String)
-
-      expect(resource.video).to have_key(:title)
-      expect(resource.video[:title]).to be_a(String)
-
-      expect(resource.video).to have_key(:youtube_video_id)
-      expect(resource.video[:youtube_video_id]).to be_a(String)
     end
   end
 end

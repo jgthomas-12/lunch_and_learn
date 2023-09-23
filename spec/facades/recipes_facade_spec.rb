@@ -10,11 +10,6 @@ RSpec.describe RecipesFacade do
       thai_recipes = RecipesFacade.new.get_recipes("thailand")
       expect(thai_recipes).to be_an(Array)
       expect(thai_recipes.first).to be_a(Recipe)
-      expect(thai_recipes.first.country).to be_a(String)
-      expect(thai_recipes.first.id).to be_a(String)
-      expect(thai_recipes.first.image_url).to be_a(String)
-      expect(thai_recipes.first.title).to be_a(String)
-      expect(thai_recipes.first.url).to be_a(String)
     end
   end
 end

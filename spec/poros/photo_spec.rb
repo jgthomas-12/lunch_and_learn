@@ -12,6 +12,8 @@ RSpec.describe Photo do
     photo = Photo.new(data)
 
     expect(photo).to be_a(Photo)
+    expect(photo.alt_tag).to be_a(String)
+    expect(photo.url).to be_a(String)
     expect(photo.alt_tag).to eq(data[:alt_description])
     expect(photo.url).to eq(data[:urls][:raw])
   end

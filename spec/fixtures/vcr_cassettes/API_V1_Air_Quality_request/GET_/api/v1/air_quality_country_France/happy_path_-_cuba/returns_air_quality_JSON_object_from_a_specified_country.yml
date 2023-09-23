@@ -19,7 +19,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Mon, 07 Aug 2023 16:59:23 GMT
+      - Sat, 23 Sep 2023 18:09:39 GMT
       Server:
       - Apache/2.4.38 (Debian)
       Cache-Control:
@@ -32,7 +32,7 @@ http_interactions:
       encoding: ASCII-8BIT
       string: !binary |-
         W3sibmFtZSI6eyJjb21tb24iOiJDdWJhIiwib2ZmaWNpYWwiOiJSZXB1YmxpYyBvZiBDdWJhIiwibmF0aXZlTmFtZSI6eyJzcGEiOnsib2ZmaWNpYWwiOiJSZXDDumJsaWNhIGRlIEN1YmEiLCJjb21tb24iOiJDdWJhIn19fSwidGxkIjpbIi5jdSJdLCJjY2EyIjoiQ1UiLCJjY24zIjoiMTkyIiwiY2NhMyI6IkNVQiIsImNpb2MiOiJDVUIiLCJpbmRlcGVuZGVudCI6dHJ1ZSwic3RhdHVzIjoib2ZmaWNpYWxseS1hc3NpZ25lZCIsInVuTWVtYmVyIjp0cnVlLCJjdXJyZW5jaWVzIjp7IkNVQyI6eyJuYW1lIjoiQ3ViYW4gY29udmVydGlibGUgcGVzbyIsInN5bWJvbCI6IiQifSwiQ1VQIjp7Im5hbWUiOiJDdWJhbiBwZXNvIiwic3ltYm9sIjoiJCJ9fSwiaWRkIjp7InJvb3QiOiIrNSIsInN1ZmZpeGVzIjpbIjMiXX0sImNhcGl0YWwiOlsiSGF2YW5hIl0sImFsdFNwZWxsaW5ncyI6WyJDVSIsIlJlcHVibGljIG9mIEN1YmEiLCJSZXDDumJsaWNhIGRlIEN1YmEiXSwicmVnaW9uIjoiQW1lcmljYXMiLCJzdWJyZWdpb24iOiJDYXJpYmJlYW4iLCJsYW5ndWFnZXMiOnsic3BhIjoiU3BhbmlzaCJ9LCJ0cmFuc2xhdGlvbnMiOnsiYXJhIjp7Im9mZmljaWFsIjoi2KzZhdmH2YjYsdmK2Kkg2YPZiNio2KciLCJjb21tb24iOiLZg9mI2KjYpyJ9LCJicmUiOnsib2ZmaWNpYWwiOiJSZXB1YmxpayBLdWJhIiwiY29tbW9uIjoiS3ViYSJ9LCJjZXMiOnsib2ZmaWNpYWwiOiJLdWLDoW5za8OhIHJlcHVibGlrYSIsImNvbW1vbiI6Ikt1YmEifSwiY3ltIjp7Im9mZmljaWFsIjoiR3dlcmluaWFldGggQ2l3YmEiLCJjb21tb24iOiJDaXdiYSJ9LCJkZXUiOnsib2ZmaWNpYWwiOiJSZXB1YmxpayBLdWJhIiwiY29tbW9uIjoiS3ViYSJ9LCJlc3QiOnsib2ZmaWNpYWwiOiJLdXViYSBWYWJhcmlpayIsImNvbW1vbiI6Ikt1dWJhIn0sImZpbiI6eyJvZmZpY2lhbCI6Ikt1dWJhbiB0YXNhdmFsdGEiLCJjb21tb24iOiJLdXViYSJ9LCJmcmEiOnsib2ZmaWNpYWwiOiJSw6lwdWJsaXF1ZSBkZSBDdWJhIiwiY29tbW9uIjoiQ3ViYSJ9LCJocnYiOnsib2ZmaWNpYWwiOiJSZXB1Ymxpa2EgS3ViYSIsImNvbW1vbiI6Ikt1YmEifSwiaHVuIjp7Im9mZmljaWFsIjoiS3ViYWkgS8O2enTDoXJzYXPDoWciLCJjb21tb24iOiJLdWJhIn0sIml0YSI6eyJvZmZpY2lhbCI6IlJlcHViYmxpY2EgZGkgQ3ViYSIsImNvbW1vbiI6IkN1YmEifSwianBuIjp7Im9mZmljaWFsIjoi44Kt44Ol44O844OQ5YWx5ZKM5Zu9IiwiY29tbW9uIjoi44Kt44Ol44O844OQIn0sImtvciI6eyJvZmZpY2lhbCI6Iuy/oOuwlCDqs7XtmZTqta0iLCJjb21tb24iOiLsv6DrsJQifSwibmxkIjp7Im9mZmljaWFsIjoiUmVwdWJsaWVrIEN1YmEiLCJjb21tb24iOiJDdWJhIn0sInBlciI6eyJvZmZpY2lhbCI6Itis2YXZh9mI2LHbjCDaqdmI2KjYpyIsImNvbW1vbiI6Itqp2YjYqNinIn0sInBvbCI6eyJvZmZpY2lhbCI6IlJlcHVibGlrYSBLdWJ5IiwiY29tbW9uIjoiS3ViYSJ9LCJwb3IiOnsib2ZmaWNpYWwiOiJSZXDDumJsaWNhIGRlIEN1YmEiLCJjb21tb24iOiJDdWJhIn0sInJ1cyI6eyJvZmZpY2lhbCI6ItCg0LXRgdC/0YPQsdC70LjQutCwINCa0YPQsdCwIiwiY29tbW9uIjoi0JrRg9Cx0LAifSwic2xrIjp7Im9mZmljaWFsIjoiS3Viw6Fuc2thIHJlcHVibGlrYSIsImNvbW1vbiI6Ikt1YmEifSwic3BhIjp7Im9mZmljaWFsIjoiUmVww7pibGljYSBkZSBDdWJhIiwiY29tbW9uIjoiQ3ViYSJ9LCJzcnAiOnsib2ZmaWNpYWwiOiLQoNC10L/Rg9Cx0LvQuNC60LAg0JrRg9Cx0LAiLCJjb21tb24iOiLQmtGD0LHQsCJ9LCJzd2UiOnsib2ZmaWNpYWwiOiJSZXB1Ymxpa2VuIEt1YmEiLCJjb21tb24iOiJLdWJhIn0sInR1ciI6eyJvZmZpY2lhbCI6IkvDvGJhIEN1bWh1cml5ZXRpIiwiY29tbW9uIjoiS8O8YmEifSwidXJkIjp7Im9mZmljaWFsIjoi2KzZhduB2YjYsduM24Eg2qnbjNmI2KjYpyIsImNvbW1vbiI6Itqp24zZiNio2KcifSwiemhvIjp7Im9mZmljaWFsIjoi5Y+k5be05YWx5ZKM5Zu9IiwiY29tbW9uIjoi5Y+k5be0In19LCJsYXRsbmciOlsyMS41LC04MC4wXSwibGFuZGxvY2tlZCI6ZmFsc2UsImFyZWEiOjEwOTg4NC4wLCJkZW1vbnltcyI6eyJlbmciOnsiZiI6IkN1YmFuIiwibSI6IkN1YmFuIn0sImZyYSI6eyJmIjoiQ3ViYWluZSIsIm0iOiJDdWJhaW4ifX0sImZsYWciOiJcdUQ4M0NcdURERThcdUQ4M0NcdURERkEiLCJtYXBzIjp7Imdvb2dsZU1hcHMiOiJodHRwczovL2dvby5nbC9tYXBzLzFkRHcxUWZac3BmTVVUbTk5Iiwib3BlblN0cmVldE1hcHMiOiJodHRwczovL3d3dy5vcGVuc3RyZWV0bWFwLm9yZy9yZWxhdGlvbi8zMDc4MzMifSwicG9wdWxhdGlvbiI6MTEzMjY2MTYsImZpZmEiOiJDVUIiLCJjYXIiOnsic2lnbnMiOlsiQyJdLCJzaWRlIjoicmlnaHQifSwidGltZXpvbmVzIjpbIlVUQy0wNTowMCJdLCJjb250aW5lbnRzIjpbIk5vcnRoIEFtZXJpY2EiXSwiZmxhZ3MiOnsicG5nIjoiaHR0cHM6Ly9mbGFnY2RuLmNvbS93MzIwL2N1LnBuZyIsInN2ZyI6Imh0dHBzOi8vZmxhZ2Nkbi5jb20vY3Uuc3ZnIiwiYWx0IjoiVGhlIGZsYWcgb2YgQ3ViYSBpcyBjb21wb3NlZCBvZiBmaXZlIGVxdWFsIGhvcml6b250YWwgYmFuZHMgb2YgYmx1ZSBhbHRlcm5hdGluZyB3aXRoIHdoaXRlIGFuZCBhIHJlZCBlcXVpbGF0ZXJhbCB0cmlhbmdsZSBzdXBlcmltcG9zZWQgb24gdGhlIGhvaXN0IHNpZGUgb2YgdGhlIGZpZWxkLiBUaGUgdHJpYW5nbGUgaGFzIGl0cyBiYXNlIG9uIHRoZSBob2lzdCBlbmQsIHNwYW5zIGFib3V0IHR3by1maWZ0aCB0aGUgd2lkdGggb2YgdGhlIGZpZWxkIGFuZCBiZWFycyBhIHdoaXRlIGZpdmUtcG9pbnRlZCBzdGFyIGF0IGl0cyBjZW50ZXIuIn0sImNvYXRPZkFybXMiOnsicG5nIjoiaHR0cHM6Ly9tYWluZmFjdHMuY29tL21lZGlhL2ltYWdlcy9jb2F0c19vZl9hcm1zL2N1LnBuZyIsInN2ZyI6Imh0dHBzOi8vbWFpbmZhY3RzLmNvbS9tZWRpYS9pbWFnZXMvY29hdHNfb2ZfYXJtcy9jdS5zdmcifSwic3RhcnRPZldlZWsiOiJtb25kYXkiLCJjYXBpdGFsSW5mbyI6eyJsYXRsbmciOlsyMy4xMiwtODIuMzVdfSwicG9zdGFsQ29kZSI6eyJmb3JtYXQiOiJDUCAjIyMjIyIsInJlZ2V4IjoiXig/OkNQKSooXFxkezV9KSQifX1d
-  recorded_at: Mon, 07 Aug 2023 16:59:23 GMT
+  recorded_at: Sat, 23 Sep 2023 18:09:39 GMT
 - request:
     method: get
     uri: https://api.api-ninjas.com/v1/airquality?city=Havana
@@ -56,13 +56,13 @@ http_interactions:
       Content-Type:
       - application/json
       Content-Length:
-      - '282'
+      - '284'
       Connection:
       - keep-alive
       Date:
-      - Mon, 07 Aug 2023 16:59:24 GMT
+      - Sat, 23 Sep 2023 18:09:40 GMT
       X-Amzn-Requestid:
-      - f75094a9-851e-402c-910d-6c5300b0386f
+      - 6baafbf6-1e7c-49f2-9c09-f53d6ae10522
       Access-Control-Allow-Origin:
       - "*"
       Allow:
@@ -70,24 +70,24 @@ http_interactions:
       Access-Control-Allow-Headers:
       - "*"
       X-Amz-Apigw-Id:
-      - JTJk7G2PvHcFgMw=
+      - LuN7rFdmPHcFWhw=
       Access-Control-Allow-Methods:
       - GET, OPTIONS, POST
       X-Amzn-Trace-Id:
-      - Root=1-64d122ec-03ebbf83044ba525051502a6;Sampled=0;lineage=d5ca6d75:0
+      - Root=1-650f29e4-1a0e37ac692b47b546924bd5;Sampled=0;lineage=d5ca6d75:0
       X-Cache:
       - Miss from cloudfront
       Via:
-      - 1.1 4c98f000f0c28d2e527e3c684f54be1e.cloudfront.net (CloudFront)
+      - 1.1 007f474c20bf8a7a3cce4825eb52f2c8.cloudfront.net (CloudFront)
       X-Amz-Cf-Pop:
       - DEN52-P1
       X-Amz-Cf-Id:
-      - _mQT8O8kYGPYGim3awC8G-NiNBZEOwZdcaLIWlGfzzjGPvVXZeTPdw==
+      - umL_E1b_XJdLhyGKrem9NLTxlZv11N925NI0yc8i9wb2RG0X9rBTPg==
     body:
       encoding: UTF-8
-      string: '{"CO": {"concentration": 250.34, "aqi": 2}, "NO2": {"concentration":
-        4.8, "aqi": 6}, "O3": {"concentration": 79.39, "aqi": 110}, "SO2": {"concentration":
-        23.13, "aqi": 34}, "PM2.5": {"concentration": 6.88, "aqi": 22}, "PM10": {"concentration":
-        10.86, "aqi": 10}, "overall_aqi": 110}'
-  recorded_at: Mon, 07 Aug 2023 16:59:24 GMT
+      string: '{"CO": {"concentration": 393.87, "aqi": 4}, "NO2": {"concentration":
+        33.93, "aqi": 42}, "O3": {"concentration": 13.41, "aqi": 11}, "SO2": {"concentration":
+        88.69, "aqi": 74}, "PM2.5": {"concentration": 26.62, "aqi": 72}, "PM10": {"concentration":
+        29.45, "aqi": 27}, "overall_aqi": 74}'
+  recorded_at: Sat, 23 Sep 2023 18:09:40 GMT
 recorded_with: VCR 6.2.0
