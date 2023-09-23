@@ -18,7 +18,7 @@ RSpec.describe "POST /api/v1/sessions", type: :request do
         password: "Joey"
       }
 
-      post "/api/v1/sessions", params: login_params, as: :json
+      post api_v1_sessions_path, params: login_params, as: :json
 
       expect(response).to be_successful
       expect(response.status).to eq(200)
@@ -52,7 +52,7 @@ RSpec.describe "POST /api/v1/sessions", type: :request do
         password: "Not Joey Joey"
       }
 
-      post "/api/v1/sessions", params: invalid_params, as: :json
+      post api_v1_sessions_path, params: invalid_params, as: :json
 
       expect(response).not_to be_successful
       expect(response.status).to eq(401)
@@ -66,7 +66,7 @@ RSpec.describe "POST /api/v1/sessions", type: :request do
         password: "Not Joey Joey"
       }
 
-      post "/api/v1/sessions", params: missing_email, as: :json
+      post api_v1_sessions_path, params: missing_email, as: :json
 
       expect(response).not_to be_successful
       expect(response.status).to eq(401)
@@ -80,7 +80,7 @@ RSpec.describe "POST /api/v1/sessions", type: :request do
         email: "joeydoesgood@gmailjoey.com",
       }
 
-      post "/api/v1/sessions", params: missing_pass, as: :json
+      post api_v1_sessions_path, params: missing_pass, as: :json
 
       expect(response).not_to be_successful
       expect(response.status).to eq(401)

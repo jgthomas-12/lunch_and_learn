@@ -5,7 +5,7 @@ RSpec.describe "API V1 Air Quality request", type: :request do
     describe "happy path - france" do
       it "returns air quality JSON object from a specified country", :vcr do
 
-        get '/api/v1/air_quality', params: { country: 'france' }, headers: { 'Accept' => 'application/json' }
+        get api_v1_air_quality_index_path, params: { country: 'france' }, headers: { 'Accept' => 'application/json' }
 
         air_quality = JSON.parse(response.body, symbolize_names: true)
 

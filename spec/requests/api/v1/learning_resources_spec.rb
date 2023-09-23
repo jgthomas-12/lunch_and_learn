@@ -5,7 +5,7 @@ RSpec.describe "API V1 learning resources request", type: :request do
     describe "happy path" do
       it "returns one learning resource in compliance with API JSON", :vcr do
 
-        get "/api/v1/learning_resources", params: { country: "laos"}, headers: { 'Accept' => 'application/json' }
+        get api_v1_learning_resources_path, params: { country: "laos"}, headers: { 'Accept' => 'application/json' }
 
         resource = JSON.parse(response.body, symbolize_names: true)
 
@@ -46,7 +46,7 @@ RSpec.describe "API V1 learning resources request", type: :request do
 
     describe "sad path" do
       it "returns an empty response when no learning resources are available for the requested country", :vcr do
-        get "/api/v1/learning_resources", params: { country: "" }, headers: { 'Accept' => 'application/json' }
+        get api_v1_learning_resources_path, params: { country: "" }, headers: { 'Accept' => 'application/json' }
 
         expect(response).to_not be_successful
         resource = JSON.parse(response.body, symbolize_names: true)

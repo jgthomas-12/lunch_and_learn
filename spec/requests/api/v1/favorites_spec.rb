@@ -18,7 +18,7 @@ RSpec.describe "POST /api/v1/favorites" do
         recipe_title: "Crab Fried Rice (Khaao Pad Bpu)"
       }
 
-      post "/api/v1/favorites", params: valid_params, as: :json
+      post api_v1_favorites_path, params: valid_params, as: :json
 
       expect(response).to be_successful
       expect(response.status).to eq(201)
@@ -38,7 +38,7 @@ RSpec.describe "POST /api/v1/favorites" do
         recipe_title: "Crab Fried Rice (Khaao Pad Bpu)"
       }
 
-      post "/api/v1/favorites", params: invalid_params, as: :json
+      post api_v1_favorites_path, params: invalid_params, as: :json
 
       expect(response).to_not be_successful
       expect(response.status).to eq(400)

@@ -8,7 +8,7 @@ RSpec.describe "GET /api/v1/favorites", type: :request do
         favorite_1 = @joey.favorites.create(recipe_title: "Something fancy", recipe_link: "https://www.example.com/fancyshit", country: "Malaysia" )
         favorite_2 = @joey.favorites.create(recipe_title: "Something fancier", recipe_link: "https://www.example.com/fanciershit", country: "Philippines" )
 
-        get "/api/v1/favorites", params: { api_key: @joey.api_key }
+        get api_v1_favorites_path, params: { api_key: @joey.api_key }
 
         expect(response).to be_successful
         expect(response.status).to eq(200)
@@ -44,7 +44,7 @@ RSpec.describe "GET /api/v1/favorites", type: :request do
       it "returns an error message with invalid api_key" do
         invalid_api_key = "nacho-key"
 
-        get "/api/v1/favorites", params: { api_key: invalid_api_key }
+        get api_v1_favorites_path, params: { api_key: invalid_api_key }
 
         expect(response).not_to be_successful
         expect(response.status).to eq(401)
@@ -58,7 +58,7 @@ RSpec.describe "GET /api/v1/favorites", type: :request do
       it "returns an empty array when user has no favorites" do
         joey_2 = User.create!(name: "Joey", email: "joeydoesgood@gmailjoey.com", password: "Joey", password_confirmation: "Joey")
 
-        get "/api/v1/favorites", params: { api_key: joey_2.api_key }
+        get api_v1_favorites_path, params: { api_key: joey_2.api_key }
 
         expect(response).to be_successful
         expect(response.status).to eq(200)

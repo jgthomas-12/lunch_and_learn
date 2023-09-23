@@ -11,7 +11,7 @@ RSpec.describe "API V1 Users", type: :request do
             password_confirmation: "treats4lyf"
         }
 
-        post "/api/v1/users", params: valid_params, as: :json
+        post api_v1_users_path, params: valid_params, as: :json
 
         user = User.first
         expect(response.status).to eq(201)
@@ -32,7 +32,7 @@ RSpec.describe "API V1 Users", type: :request do
           password_confirmation: "nofuggintreats"
         }
 
-        post "/api/v1/users", params: invalid_params, as: :json
+        post api_v1_users_path, params: invalid_params, as: :json
 
         expect(response).not_to be_successful
         expect(response.status).to eq(422)
