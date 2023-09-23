@@ -6,7 +6,7 @@ RSpec.describe "API V1 Recipes request", type: :request do
 
       it "returns a list of recipes from a specified country", :vcr do
 
-        get '/api/v1/recipes', params: { country: 'thailand' }, headers: { 'Accept' => 'application/json' }
+        get api_v1_recipes_path, params: { country: 'thailand' }, headers: { 'Accept' => 'application/json' }
 
         recipes = JSON.parse(response.body, symbolize_names: true)
 
@@ -37,7 +37,7 @@ RSpec.describe "API V1 Recipes request", type: :request do
 
       it "returns a list of recipes from a random country if no country is specified", :vcr do
 
-        get '/api/v1/recipes', params: { country: "random" }, headers: { 'Accept' => 'application/json' }
+        get api_v1_recipes_path, params: { country: "random" }, headers: { 'Accept' => 'application/json' }
 
         recipes = JSON.parse(response.body, symbolize_names: true)
 
@@ -66,7 +66,7 @@ RSpec.describe "API V1 Recipes request", type: :request do
     describe "sad path" do
       it "returns an emptry array if parameter is emptry string or value does't return any recipes", :vcr do
 
-        get '/api/v1/recipes', params: { country: 'dsf34' }, headers: { 'Accept' => 'application/json' }
+        get api_v1_recipes_path, params: { country: 'dsf34' }, headers: { 'Accept' => 'application/json' }
 
         recipes = JSON.parse(response.body, symbolize_names: true)
 
